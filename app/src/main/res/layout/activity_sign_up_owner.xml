@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up as Owner"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_house_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="House Address"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_unit_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Unit Number"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/edit_text_id_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID Number"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_proof_of_ownership"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Proof of Ownership (e.g., Title Deed)"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"/>
+
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:padding="12dp"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

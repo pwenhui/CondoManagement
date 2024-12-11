@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/button_visitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up as Visitor"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/button_guard_house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up as Guard House"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/button_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up as Owner"/>
+</LinearLayout>

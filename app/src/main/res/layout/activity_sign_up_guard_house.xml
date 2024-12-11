@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up as Guard House"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Full Name -->
+    <EditText
+        android:id="@+id/edit_text_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Phone Number -->
+    <EditText
+        android:id="@+id/edit_text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Guard ID -->
+    <EditText
+        android:id="@+id/edit_text_guard_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Guard ID"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Shift Details -->
+    <EditText
+        android:id="@+id/edit_text_shift_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Shift Details (e.g., Day or Night)"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Assigned Location -->
+    <EditText
+        android:id="@+id/edit_text_assigned_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Assigned Location"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:padding="12dp"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

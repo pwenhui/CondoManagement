@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "323147485196",
+    "project_id": "condoapp-b44d1",
+    "storage_bucket": "condoapp-b44d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323147485196:android:5ca2ec41623c3907a09e29",
+        "android_client_info": {
+          "package_name": "com.cc.condoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-8n5UnLc88FmUoIiUcmiaUGFzOIe7ZKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323147485196:android:2bdb0b35fc26562ea09e29",
+        "android_client_info": {
+          "package_name": "com.example.condomanagement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-8n5UnLc88FmUoIiUcmiaUGFzOIe7ZKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
