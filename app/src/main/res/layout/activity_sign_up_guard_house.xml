@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up as Guard House"
+        android:text="Set Up Account for Security Guards"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="24dp"/>
@@ -43,6 +43,16 @@
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Emergency Contact Number -->
+    <EditText
+        android:id="@+id/edit_text_emergencyContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Emergency Contact Number"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
     <!-- Guard ID -->
     <EditText
         android:id="@+id/edit_text_guard_id"
@@ -53,15 +63,16 @@
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Shift Details -->
-    <EditText
-        android:id="@+id/edit_text_shift_details"
+    <!-- Calendar for Selecting Registration Date -->
+    <CalendarView
+        android:id="@+id/calendar_view_shift"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Shift Details (e.g., Day or Night)"
-        android:inputType="text"
+        android:layout_marginBottom="16dp"
         android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        android:dateTextAppearance="?android:attr/textAppearanceMedium"
+        android:weekDayTextAppearance="?android:attr/textAppearanceSmall"
+        android:showWeekNumber="false" />
 
     <!-- Assigned Location -->
     <EditText
