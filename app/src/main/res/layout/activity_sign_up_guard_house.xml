@@ -1,106 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Set Up Account for Security Guards"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="24dp"/>
-
-    <!-- Full Name -->
-    <EditText
-        android:id="@+id/edit_text_full_name"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Full Name"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
 
-    <!-- Email -->
-    <EditText
-        android:id="@+id/edit_text_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email Address"
-        android:inputType="textEmailAddress"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Up Account for Security Guards"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
 
-    <!-- Phone Number -->
-    <EditText
-        android:id="@+id/edit_text_phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Phone Number"
-        android:inputType="phone"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/edit_text_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Emergency Contact Number -->
-    <EditText
-        android:id="@+id/edit_text_emergencyContact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Emergency Contact Number"
-        android:inputType="phone"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        <!-- Email -->
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Guard ID -->
-    <EditText
-        android:id="@+id/edit_text_guard_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Guard ID"
-        android:inputType="text"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        <!-- Phone Number -->
+        <EditText
+            android:id="@+id/edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Calendar for Selecting Registration Date -->
-    <CalendarView
-        android:id="@+id/calendar_view_shift"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:padding="12dp"
-        android:dateTextAppearance="?android:attr/textAppearanceMedium"
-        android:weekDayTextAppearance="?android:attr/textAppearanceSmall"
-        android:showWeekNumber="false" />
+        <!-- Emergency Contact Number -->
 
-    <!-- Assigned Location -->
-    <EditText
-        android:id="@+id/edit_text_assigned_location"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Assigned Location"
-        android:inputType="text"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        <!-- Guard ID -->
+        <EditText
+            android:id="@+id/edit_text_emergencyContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Emergency Contact Number"
+            android:inputType="phone"
+            android:padding="12dp" />
 
-    <!-- Password -->
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"/>
+        <EditText
+            android:id="@+id/edit_text_guard_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Guard ID (Use this to login the system)"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Submit Button -->
-    <Button
-        android:id="@+id/button_submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:padding="12dp"
-        android:textColor="@android:color/white"/>
+        <!-- Password -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="12dp"
+            android:layout_marginBottom="24dp"/>
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Date to Start Work"
+            android:paddingLeft="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Calendar for Selecting Registration Date -->
+        <CalendarView
+            android:id="@+id/calendar_view_shift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dateTextAppearance="?android:attr/textAppearanceMedium"
+            android:weekDayTextAppearance="?android:attr/textAppearanceSmall"
+            android:showWeekNumber="false" />
+
+        <!-- Assigned Location -->
+        <EditText
+            android:id="@+id/edit_text_assigned_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Assigned Location"
+            android:inputType="text"
+            android:paddingBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Approve and manage your guard's duty schedule later"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:textStyle="italic"  />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:padding="12dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

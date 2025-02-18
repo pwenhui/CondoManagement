@@ -1,10 +1,8 @@
 package com.example.condomanagement;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,10 +18,10 @@ public class SignUpActivity extends AppCompatActivity {
 
         // Inflate the layout based on the role
         switch (role) {
-            case "visitor":
-                view = LayoutInflater.from(this).inflate(R.layout.activity_sign_up_visitor, null);
+            case "tenant":
+                view = LayoutInflater.from(this).inflate(R.layout.activity_sign_up_tenant, null);
                 break;
-            case "guard_house":
+            case "guard":
                 view = LayoutInflater.from(this).inflate(R.layout.activity_sign_up_guard_house, null);
                 break;
             case "owner":
