@@ -1,28 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button_visitor"
-        android:layout_width="wrap_content"
+    <!-- Toolbar as Navigation Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Up as Visitor"
-        android:layout_marginBottom="16dp"/>
+        android:background="@color/purple_500"
+        android:elevation="4dp">
 
-    <Button
-        android:id="@+id/button_guard_house"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign Up as Guard House"
-        android:layout_marginBottom="16dp"/>
+        <!-- Title in Toolbar -->
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="MYConnectNest"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
 
-    <Button
-        android:id="@+id/button_owner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign Up as Owner"/>
+    <!-- ScrollView for buttons and content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MyNestConnect is an online platform where tenants and landlords can connect, build their profiles, share reviews, and provide references for each other. The platform is designed to foster transparent and positive relationships between tenants and landlords, offering a space for both parties to interact and evaluate each other based on shared experiences."
+                android:lineHeight="30dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please select your registration type"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <!-- Button 1: Visitor -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/button_visitor"
+                    android:layout_width="400dp"
+                    android:layout_height="360dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tenant"
+                    android:background="@null"
+                    android:contentDescription="Register as a Tenant" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Register as a\n\n"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+                <!-- Second TextView for larger "Tenant" -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Tenant"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="35sp"
+                    android:layout_marginTop="4dp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Create a detailed profile to showcase your rental history, skills, and references.\n• Browse available rental listings and connect with landlords.\n• Leave reviews for landlords based on your rental experience.\n•Contact landlords directly\n•Add personal skills (e.g., gardening, pets lover) to your profile to offer value to landlords.\n•Read reviews of landlords to make informed decisions before renting\n•Receive transparent and honest feedback from landlords"
+                android:textSize="16sp"
+                android:lineHeight="28dp" />
+
+            <!-- Button 2: Landlord -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/button_guard_house"
+                    android:layout_width="400dp"
+                    android:layout_height="360dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/landlord"
+                    android:background="@null"
+                    android:contentDescription="Register as a Landlord" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Register as a\n\n"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+                <!-- Second TextView for larger "Landlord" -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Landlord"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="35sp"
+                    android:layout_marginTop="4dp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• List your rental properties and manage your property details\n• Review potential tenants based on their profiles and rental history.\n• Receive feedback from tenants to build your reputation.\n•Leave reviews for tenants to share their reliability and behavior.\n•Communicate directly with potential tenants\n•Share clear expectations and rental conditions with tenants upfront.\n•Customize your profile to showcase your properties and any specific requirements."
+                android:textSize="16sp"
+                android:lineHeight="28dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Button 3: Landlord -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/button_owner"
+                    android:layout_width="360dp"
+                    android:layout_height="360dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/testing"
+                    android:background="@null"
+                    android:contentDescription="Register as a Landlord" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Register as a\n\n"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <!-- Second TextView for larger "Landlord" -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Landlord"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_marginTop="4dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

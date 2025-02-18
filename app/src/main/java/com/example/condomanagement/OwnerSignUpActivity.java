@@ -93,24 +93,10 @@ public class OwnerSignUpActivity extends AppCompatActivity {
     }
 
     private void saveUserDetails(String userId, String fullName, String email, String phone, String houseAddress, String unitNumber, String idNumber, String proofOfOwnership, String role) {
-        String node;
-        switch (role){
-            case "Owner":
-                node = "owners";
-                break;
-            case "visitor":
-                node = "visitors";
-                break;
-            case "guard":
-                node = "guards";
-                break;
-            default:
-                node = "visitors";
-        }
 
         Owner newUser = new Owner(fullName, email, phone, houseAddress, unitNumber, idNumber, proofOfOwnership,"Pending" , "Owner");
 
-        mDatabase.child(node).child(userId).setValue(newUser)
+        mDatabase.child("owners").child(userId).setValue(newUser)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         Toast.makeText(OwnerSignUpActivity.this, "Sign-up successful", Toast.LENGTH_SHORT).show();
@@ -154,5 +140,4 @@ public class OwnerSignUpActivity extends AppCompatActivity {
             this.role = role;
         }
     }
-
 }

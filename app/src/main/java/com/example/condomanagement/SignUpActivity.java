@@ -23,7 +23,7 @@ public class SignUpActivity extends AppCompatActivity {
             case "visitor":
                 view = LayoutInflater.from(this).inflate(R.layout.activity_sign_up_visitor, null);
                 break;
-            case "guard_house":
+            case "guard":
                 view = LayoutInflater.from(this).inflate(R.layout.activity_sign_up_guard_house, null);
                 break;
             case "owner":
